@@ -12,8 +12,11 @@
 
     <color name="blue1">#4596EA</color>
     <color name="blue2">#4552CB</color>
+    <color name="blue3">#3D5C98</color>
 
     <color name="violet1">#4552CB</color>
+
+    <color name="red1">#EF403B</color>
 
     <color name="gray1" tools:ignore="MissingDefaultResource">#E6E7F8</color>
     <color name="gray2" tools:ignore="MissingDefaultResource">#F0F0F8</color>
