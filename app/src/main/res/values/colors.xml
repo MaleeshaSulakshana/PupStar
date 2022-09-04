@@ -18,8 +18,12 @@
 
     <color name="red1">#EF403B</color>
 
+    <color name="yellow1">#FFCF6F</color>
+
     <color name="gray1" tools:ignore="MissingDefaultResource">#E6E7F8</color>
     <color name="gray2" tools:ignore="MissingDefaultResource">#F0F0F8</color>
     <color name="gray3" tools:ignore="MissingDefaultResource">#BBC3CE</color>
+    <color name="gray4" tools:ignore="MissingDefaultResource">#F8F7FB</color>
+    <color name="gray5" tools:ignore="MissingDefaultResource">#979797</color>
 
 </resources>

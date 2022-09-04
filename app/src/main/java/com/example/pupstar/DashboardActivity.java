@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.pupstar.Fragments.AppointmentsFragment;
+import com.example.pupstar.Fragments.DashboardFragment;
 import com.example.pupstar.Fragments.ExploreFragment;
+import com.example.pupstar.Fragments.MyDogsFragment;
 import com.example.pupstar.Fragments.ProfileFragment;
 import com.example.pupstar.Fragments.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -26,6 +28,7 @@ public class DashboardActivity extends AppCompatActivity {
         bottomNavigationView = (BottomNavigationView) this.findViewById(R.id.navigatorView);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        bottomNavigationView.setSelectedItemId(R.id.nav_dashboard);
 
 //        bottomNavigationView.setSelectedItemId(R.id.nav_search);
 //
@@ -55,9 +58,18 @@ public class DashboardActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
 
                     switch (item.getItemId()) {
-                        case R.id.nav_search:
-                            selectedFragment = new SearchFragment();
+
+                        case R.id.nav_dashboard:
+                            selectedFragment = new DashboardFragment();
                             break;
+
+                        case R.id.nav_my_dogs:
+                            selectedFragment = new MyDogsFragment();
+                            break;
+
+//                        case R.id.nav_search:
+//                            selectedFragment = new SearchFragment();
+//                            break;
 
                         case R.id.nav_appointment:
                             selectedFragment = new AppointmentsFragment();

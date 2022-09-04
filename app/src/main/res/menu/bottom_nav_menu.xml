@@ -7,9 +7,14 @@
         android:id="@+id/nav_dashboard" />
 
     <item
-        android:title="Search"
-        android:icon="@drawable/ic_search"
-        android:id="@+id/nav_search" />
+        android:title="My Dogs"
+        android:icon="@drawable/ic_pets"
+        android:id="@+id/nav_my_dogs" />
+
+<!--    <item-->
+<!--        android:title="Search"-->
+<!--        android:icon="@drawable/ic_search"-->
+<!--        android:id="@+id/nav_search" />-->
 
     <item
         android:title="Appointments"
