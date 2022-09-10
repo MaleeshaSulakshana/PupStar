@@ -18,7 +18,7 @@ import java.io.IOException;
 
 public class DetectBehaviorActivity extends AppCompatActivity {
 
-    private Button btnNext, btnResetImage,btnSave;
+    private Button btnAnalyse, btnResetImage;
     private LinearLayout selectDetectionImage;
     private ImageView petImage;
 
@@ -31,10 +31,8 @@ public class DetectBehaviorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detect_behavior);
 
-
         btnResetImage = (Button) findViewById(R.id.btnResetImage);
-        btnNext = (Button) findViewById(R.id.btnNext);
-        btnSave = (Button) findViewById(R.id.btnSave);
+        btnAnalyse = (Button) findViewById(R.id.btnAnalyse);
 
         selectDetectionImage = (LinearLayout) findViewById(R.id.selectDetectionImage);
 
@@ -44,6 +42,17 @@ public class DetectBehaviorActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openGallery();
+            }
+        });
+
+        btnAnalyse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(DetectBehaviorActivity.this, ViewBehaviorDetectedResultActivity.class);
+//                intent.putExtra("BitmapImage", bitmap);
+                startActivity(intent);
+
             }
         });
 

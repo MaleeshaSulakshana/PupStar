@@ -9,7 +9,6 @@
     android:background="@color/gray4"
     tools:context=".DetectBehaviorActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -232,7 +231,7 @@
                     android:gravity="center">
 
                     <Button
-                        android:id="@+id/btnNext"
+                        android:id="@+id/btnAnalyse"
                         android:layout_width="180dp"
                         android:layout_height="42dp"
                         android:background="@drawable/bg_gradient_blue_round_corner"

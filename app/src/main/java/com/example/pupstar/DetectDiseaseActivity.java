@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class DetectDiseaseActivity extends AppCompatActivity {
 
-    private Button btnNext, btnResetImage,btnSave;
+    private Button btnAnalyse, btnResetImage;
     private LinearLayout selectDetectionImage;
     private ImageView petImage;
 
@@ -37,8 +37,7 @@ public class DetectDiseaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detect_disease);
 
         btnResetImage = (Button) findViewById(R.id.btnResetImage);
-        btnNext = (Button) findViewById(R.id.btnNext);
-        btnSave = (Button) findViewById(R.id.btnSave);
+        btnAnalyse = (Button) findViewById(R.id.btnAnalyse);
 
         selectDetectionImage = (LinearLayout) findViewById(R.id.selectDetectionImage);
 
@@ -48,6 +47,14 @@ public class DetectDiseaseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openGallery();
+            }
+        });
+
+        btnAnalyse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetectDiseaseActivity.this, ViewDiseaseDetectedResultActivity.class);
+                startActivity(intent);
             }
         });
 
