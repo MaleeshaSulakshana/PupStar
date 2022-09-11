@@ -25,5 +25,6 @@
     <color name="gray3" tools:ignore="MissingDefaultResource">#BBC3CE</color>
     <color name="gray4" tools:ignore="MissingDefaultResource">#F8F7FB</color>
     <color name="gray5" tools:ignore="MissingDefaultResource">#979797</color>
+    <color name="gray6" tools:ignore="MissingDefaultResource">#E4E3F3</color>
 
 </resources>

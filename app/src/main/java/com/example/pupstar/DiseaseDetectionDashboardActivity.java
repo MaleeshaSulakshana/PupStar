@@ -7,36 +7,31 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class DogsBehaviorDashboardActivity extends AppCompatActivity {
+public class DiseaseDetectionDashboardActivity extends AppCompatActivity {
 
-    private Button btnBehavior, btnPreRecords, btnTimeSchedule;
+    private Button btnDetect, btnPreRecords;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dogs_behavior_dashboard);
+        setContentView(R.layout.activity_disease_detection_dashboard);
 
-        btnBehavior = (Button) this.findViewById(R.id.btnBehavior);
+        btnDetect = (Button) this.findViewById(R.id.btnDetect);
         btnPreRecords = (Button) this.findViewById(R.id.btnPreRecords);
-        btnTimeSchedule = (Button) this.findViewById(R.id.btnTimeSchedule);
 
-        btnBehavior.setOnClickListener(new View.OnClickListener() {
+        btnDetect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(DogsBehaviorDashboardActivity.this, DetectBehaviorActivity.class);
+                Intent intent = new Intent(DiseaseDetectionDashboardActivity.this, DetectDiseaseActivity.class);
                 startActivity(intent);
-
             }
         });
 
         btnPreRecords.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(DogsBehaviorDashboardActivity.this, PreviousBehaviorsActivity.class);
+                Intent intent = new Intent(DiseaseDetectionDashboardActivity.this, PreviousDiseasesActivity.class);
                 startActivity(intent);
-
             }
         });
 

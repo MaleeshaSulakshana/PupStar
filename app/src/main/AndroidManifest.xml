@@ -24,6 +24,15 @@
         android:theme="@style/Theme.PupStar"
         tools:targetApi="31">
         <activity
+            android:name=".PreviousDiseasesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreviousBehaviorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiseaseDetectionDashboardActivity"
+            android:exported="false" />
+        <activity
             android:name=".DiseasePrescriptionsActivity"
             android:exported="false" />
         <activity

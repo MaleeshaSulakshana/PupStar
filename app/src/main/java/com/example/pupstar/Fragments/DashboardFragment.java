@@ -14,6 +14,7 @@ import android.widget.Spinner;
 import com.example.pupstar.AddDogDetailsActivity;
 import com.example.pupstar.DetectBehaviorActivity;
 import com.example.pupstar.DetectDiseaseActivity;
+import com.example.pupstar.DiseaseDetectionDashboardActivity;
 import com.example.pupstar.DogsBehaviorDashboardActivity;
 import com.example.pupstar.R;
 
@@ -57,7 +58,7 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getContext(), DetectDiseaseActivity.class);
+                Intent intent = new Intent(getContext(), DiseaseDetectionDashboardActivity.class);
                 startActivity(intent);
 
             }

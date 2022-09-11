@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".DogsBehaviorDashboardActivity">
+    tools:context=".DiseaseDetectionDashboardActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,20 +21,20 @@
             android:layout_height="match_parent">
 
             <ImageView
-                app:tint="@color/violet1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/ic_arrow_back" />
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/violet1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="Dog’s Behaviour"
+                android:text="Dog’s Skin Disease"
                 android:textColor="@color/black1"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -53,16 +53,16 @@
         <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/behaviour"/>
+            android:src="@drawable/sleep_dog"/>
 
         <Button
-            android:id="@+id/btnBehavior"
+            android:id="@+id/btnDetect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:background="@drawable/bg_gradient_blue_round_corner"
-            android:text="Dog behavior"
-            android:textColor="@color/white"
+            android:background="@drawable/bg_white_round_corner_with_stroke"
+            android:text="Identify new disease"
+            android:textColor="@color/black1"
             android:textStyle="bold"
             app:backgroundTint="@null"/>
 
@@ -73,17 +73,6 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/bg_white_round_corner_with_stroke"
             android:text="Check previous records"
-            android:textColor="@color/black1"
-            android:textStyle="bold"
-            app:backgroundTint="@null"/>
-
-        <Button
-            android:id="@+id/btnTimeSchedule"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bg_white_round_corner_with_stroke"
-            android:text="Time Schedule"
             android:textColor="@color/black1"
             android:textStyle="bold"
             app:backgroundTint="@null"/>
