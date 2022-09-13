@@ -15,6 +15,7 @@
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/drawable/gray_out_line.xml" value="0.1915" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/drawable/navigation_view_colored.xml" value="0.2425" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/drawable/toggle_widget_background.xml" value="0.1915" />
+        <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_add_appointment.xml" value="0.264" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_add_dog_details.xml" value="0.264" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_detect_behavier.xml" value="0.2630208333333333" />
@@ -26,9 +27,11 @@
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_dogs_dehavior_dashboard.xml" value="0.2630208333333333" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_previoues_behaviors.xml" value="0.25181159420289856" />
+        <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_previous_behaviors.xml" value="0.2625" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_previous_diseases.xml" value="0.24010416666666667" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_sign_up.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_veterinarians.xml" value="0.2625" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_view_behavior_detected_result.xml" value="0.264" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_view_disease_detected_result.xml" value="0.25181159420289856" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/activity_welcome.xml" value="0.358695652173913" />
@@ -44,6 +47,7 @@
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/row_my_dogs_item.xml" value="0.264" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/row_pre_behaviors_item.xml" value="0.25181159420289856" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/row_pre_disease_item.xml" value="0.1125" />
+        <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/row_vet_item.xml" value="0.2625" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/layout/spinner_row.xml" value="0.365625" />
         <entry key="..\:/External-Projects/#SLIIT/Chamika/PupStar/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>

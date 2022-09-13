@@ -17,6 +17,7 @@ import com.example.pupstar.DetectDiseaseActivity;
 import com.example.pupstar.DiseaseDetectionDashboardActivity;
 import com.example.pupstar.DogsBehaviorDashboardActivity;
 import com.example.pupstar.R;
+import com.example.pupstar.VeterinariansActivity;
 
 public class DashboardFragment extends Fragment {
 
@@ -59,6 +60,16 @@ public class DashboardFragment extends Fragment {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getContext(), DiseaseDetectionDashboardActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        veterinary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getContext(), VeterinariansActivity.class);
                 startActivity(intent);
 
             }

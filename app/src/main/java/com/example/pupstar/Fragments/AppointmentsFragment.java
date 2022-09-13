@@ -1,6 +1,7 @@
 package com.example.pupstar.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -17,6 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.pupstar.AddAppointmentActivity;
 import com.example.pupstar.R;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
@@ -28,7 +30,7 @@ import java.util.ArrayList;
 public class AppointmentsFragment extends Fragment {
 
     private ChipGroup chipGroup;
-    private LinearLayout layoutUpcoming;
+    private TextView addAppointment;
 
     private ListView listView;
     private ArrayList<AppointmentItem> arrayList = new ArrayList<>();
@@ -40,8 +42,7 @@ public class AppointmentsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_appointments, container, false);
 
         chipGroup = (ChipGroup) view.findViewById(R.id.chipGroup);
-
-        layoutUpcoming = (LinearLayout) view.findViewById(R.id.layoutUpcoming);
+        addAppointment = (TextView) view.findViewById(R.id.addAppointment);
         listView = (ListView) view.findViewById(R.id.listView);
 
         showUpcoming();
@@ -61,6 +62,14 @@ public class AppointmentsFragment extends Fragment {
                     }
 
                 }
+            }
+        });
+
+        addAppointment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), AddAppointmentActivity.class);
+                startActivity(intent);
             }
         });
 

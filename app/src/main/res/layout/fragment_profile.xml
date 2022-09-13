@@ -241,56 +241,6 @@
                     android:textStyle="bold"
                     app:backgroundTint="@null"/>
 
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="330dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:orientation="vertical">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Full Name"-->
-<!--                        android:textColor="@color/gray3"-->
-<!--                        android:textSize="14dp" />-->
-
-<!--                    <EditText-->
-<!--                        android:layout_width="330dp"-->
-<!--                        android:layout_height="40dp"-->
-<!--                        android:backgroundTint="@color/white"-->
-<!--                        android:hint="Full Name"-->
-<!--                        android:inputType="textEmailAddress"-->
-<!--                        android:textColorHint="@color/gray3"-->
-<!--                        android:textSize="16dp"/>-->
-
-<!--                </LinearLayout>-->
-
-<!--                <LinearLayout-->
-<!--                    android:layout_width="330dp"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="10dp"-->
-<!--                    android:orientation="vertical">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:text="Owner Gender"-->
-<!--                        android:textColor="@color/gray3"-->
-<!--                        android:textSize="14dp" />-->
-
-<!--                    <Spinner-->
-<!--                        android:id="@+id/genderType"-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="40dp"-->
-<!--                        android:backgroundTint="@color/white"-->
-<!--                        android:hint="Gender"-->
-<!--                        android:inputType="textEmailAddress"-->
-<!--                        android:textColorHint="@color/gray3"-->
-<!--                        android:textSize="16dp"/>-->
-
-<!--                </LinearLayout>-->
-
             </LinearLayout>
 
         </ScrollView>
