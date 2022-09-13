@@ -11,20 +11,10 @@
         android:icon="@drawable/ic_pets"
         android:id="@+id/nav_my_dogs" />
 
-<!--    <item-->
-<!--        android:title="Search"-->
-<!--        android:icon="@drawable/ic_search"-->
-<!--        android:id="@+id/nav_search" />-->
-
     <item
         android:title="Appointments"
         android:icon="@drawable/ic_access_time"
         android:id="@+id/nav_appointment"/>
-
-<!--    <item-->
-<!--        android:title="Explore"-->
-<!--        android:icon="@drawable/ic_explore"-->
-<!--        android:id="@+id/nav_explore"/>-->
 
     <item
         android:title="Profile"

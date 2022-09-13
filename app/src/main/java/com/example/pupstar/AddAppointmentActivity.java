@@ -42,11 +42,9 @@ public class AddAppointmentActivity extends AppCompatActivity {
                                        int position, long id) {
                 selectedPet = String.valueOf(petItemsArray.get(position).getId());
                 String strImage = String.valueOf(petItemsArray.get(position).getImage());
-//                selectedPet = (String) parent.getItemAtPosition();
 
                 Uri imgUri = Uri.parse(strImage);
                 Picasso.get().load(imgUri).into(petImage);
-
             }
 
             @Override
