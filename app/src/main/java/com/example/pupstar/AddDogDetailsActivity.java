@@ -43,7 +43,7 @@ public class AddDogDetailsActivity extends AppCompatActivity {
 
     private Button btnNext, btnResetImage,btnSave;
     private LinearLayout detailView, detectionView, selectDetectionImage;
-    private ImageView selectedImage, petImage;
+    private ImageView selectedImage, petImage, btnBack;
     private Spinner petType, genderType;
     private TextView detectedTitle;
     private EditText dob;
@@ -81,12 +81,20 @@ public class AddDogDetailsActivity extends AppCompatActivity {
 
         selectedImage = (ImageView) findViewById(R.id.selectedImage);
         petImage = (ImageView) findViewById(R.id.petImage);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
 
         petType = (Spinner) findViewById(R.id.petType);
         genderType = (Spinner) findViewById(R.id.genderType);
 
         detectionView.setVisibility(View.VISIBLE);
         detailView.setVisibility(View.GONE);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 //        Show calender
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {

@@ -31,7 +31,7 @@ public class VeterinariansActivity extends AppCompatActivity {
 
     private ChipGroup chipGroup;
     private EditText search;
-    private ImageView back;
+    private ImageView btnBack;
 
     private ListView listView;
     private ArrayList<VetItem> arrayList = new ArrayList<>();
@@ -46,9 +46,16 @@ public class VeterinariansActivity extends AppCompatActivity {
 
         listView = (ListView) this.findViewById(R.id.listView);
         search = (EditText) this.findViewById(R.id.search);
-        back = (ImageView) this.findViewById(R.id.back);
+        btnBack = (ImageView) this.findViewById(R.id.btnBack);
 
         showClinics();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

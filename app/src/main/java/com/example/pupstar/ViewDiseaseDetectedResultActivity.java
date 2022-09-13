@@ -15,7 +15,7 @@ import com.squareup.picasso.Picasso;
 
 public class ViewDiseaseDetectedResultActivity extends AppCompatActivity {
 
-    private ImageView setImage, cardImage;
+    private ImageView setImage, cardImage, btnBack;
     private CardView btnNext;
     private TextView disease, title, desc;
 
@@ -28,6 +28,7 @@ public class ViewDiseaseDetectedResultActivity extends AppCompatActivity {
 
         setImage = (ImageView) this.findViewById(R.id.setImage);
         cardImage = (ImageView) this.findViewById(R.id.cardImage);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
 
         btnNext = (CardView) this.findViewById(R.id.btnNext);
 
@@ -48,6 +49,13 @@ public class ViewDiseaseDetectedResultActivity extends AppCompatActivity {
         disease.setText(tip);
         title.setText(diseaseName);
         desc.setText(diseaseDescription);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override

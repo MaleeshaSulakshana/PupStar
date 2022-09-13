@@ -2,6 +2,7 @@ package com.example.pupstar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 public class AddAppointmentActivity extends AppCompatActivity {
 
     private Spinner pet;
-    private ImageView petImage;
+    private ImageView petImage, btnBack;
     private EditText details;
 
     private ArrayList<Pet> petItemsArray = new ArrayList<Pet>();
@@ -34,6 +35,7 @@ public class AddAppointmentActivity extends AppCompatActivity {
 
         pet = (Spinner) this.findViewById(R.id.pet);
         petImage = (ImageView) this.findViewById(R.id.petImage);
+        btnBack = (ImageView) this.findViewById(R.id.btnBack);
         details = (EditText) this.findViewById(R.id.details);
 
         pet.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -50,6 +52,13 @@ public class AddAppointmentActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class DiseaseDetectionDashboardActivity extends AppCompatActivity {
 
     private Button btnDetect, btnPreRecords;
+    private ImageView btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,15 @@ public class DiseaseDetectionDashboardActivity extends AppCompatActivity {
 
         btnDetect = (Button) this.findViewById(R.id.btnDetect);
         btnPreRecords = (Button) this.findViewById(R.id.btnPreRecords);
+
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btnDetect.setOnClickListener(new View.OnClickListener() {
             @Override

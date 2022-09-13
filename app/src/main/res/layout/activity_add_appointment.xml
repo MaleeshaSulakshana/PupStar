@@ -22,13 +22,13 @@
 
             <ImageView
                 android:id="@+id/btnBack"
-                app:tint="@color/violet1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/ic_arrow_back" />
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/violet1" />
 
             <TextView
                 android:layout_width="wrap_content"

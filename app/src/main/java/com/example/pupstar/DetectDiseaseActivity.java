@@ -25,7 +25,7 @@ public class DetectDiseaseActivity extends AppCompatActivity {
 
     private Button btnAnalyse, btnResetImage;
     private LinearLayout selectDetectionImage;
-    private ImageView petImage;
+    private ImageView petImage, btnBack;
 
     private static final int PICK_IMAGE = 100;
     private Uri imageUri = Uri.EMPTY;
@@ -42,6 +42,14 @@ public class DetectDiseaseActivity extends AppCompatActivity {
         selectDetectionImage = (LinearLayout) findViewById(R.id.selectDetectionImage);
 
         petImage = (ImageView) findViewById(R.id.petImage);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         selectDetectionImage.setOnClickListener(new View.OnClickListener() {
             @Override

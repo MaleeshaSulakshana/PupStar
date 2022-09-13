@@ -29,6 +29,7 @@ public class PreviousDiseasesActivity extends AppCompatActivity {
 
     private ListView listView;
     private EditText search;
+    private ImageView btnBack;
 
     private ArrayList<PreDiseaseItem> arrayList = new ArrayList<>();
     private ArrayList<PreDiseaseItem> arrayList2 = new ArrayList<>();
@@ -42,7 +43,16 @@ public class PreviousDiseasesActivity extends AppCompatActivity {
 
         search = (EditText) this.findViewById(R.id.search);
 
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+
         showPreDiseases();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

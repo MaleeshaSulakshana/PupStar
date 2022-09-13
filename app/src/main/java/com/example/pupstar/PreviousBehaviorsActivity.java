@@ -29,6 +29,7 @@ public class PreviousBehaviorsActivity extends AppCompatActivity {
 
     private ListView listView;
     private EditText search;
+    private ImageView btnBack;
 
     private ArrayList<PreBehaviorItem> arrayList = new ArrayList<>();
     private ArrayList<PreBehaviorItem> arrayList2 = new ArrayList<>();
@@ -41,8 +42,16 @@ public class PreviousBehaviorsActivity extends AppCompatActivity {
         listView = (ListView) this.findViewById(R.id.listView);
 
         search = (EditText) this.findViewById(R.id.search);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
 
         showPreBehaviors();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

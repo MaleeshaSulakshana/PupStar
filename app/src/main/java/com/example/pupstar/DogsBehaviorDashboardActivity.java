@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class DogsBehaviorDashboardActivity extends AppCompatActivity {
 
-    private Button btnBehavior, btnPreRecords, btnTimeSchedule;
+    private Button btnBehavior, btnPreRecords;
+    private ImageView btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +20,15 @@ public class DogsBehaviorDashboardActivity extends AppCompatActivity {
 
         btnBehavior = (Button) this.findViewById(R.id.btnBehavior);
         btnPreRecords = (Button) this.findViewById(R.id.btnPreRecords);
-        btnTimeSchedule = (Button) this.findViewById(R.id.btnTimeSchedule);
+
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         btnBehavior.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -35,6 +35,7 @@ public class ViewBehaviorDetectedResultActivity extends AppCompatActivity {
     private ListView listView;
     private TextView mood;
     private CardView veterinary;
+    private ImageView btnBack;
 
     private ArrayList<BehaviorItem> arrayList = new ArrayList<>();
 
@@ -58,6 +59,8 @@ public class ViewBehaviorDetectedResultActivity extends AppCompatActivity {
         mood = (TextView) this.findViewById(R.id.mood);
         veterinary = (CardView) this.findViewById(R.id.veterinary);
 
+        btnBack = (ImageView) findViewById(R.id.btnBack);
+
         Uri imgUri = Uri.parse("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F06%2Frottweiler-headshot-678833089-2000.jpg");
         Picasso.get().load(imgUri).into(setImage);
 
@@ -67,6 +70,13 @@ public class ViewBehaviorDetectedResultActivity extends AppCompatActivity {
 //        setImage.setImageBitmap(bitmap);
 
         showBehaviors();
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         veterinary.setOnClickListener(new View.OnClickListener() {
             @Override

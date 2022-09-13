@@ -28,24 +28,6 @@ public class DashboardActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
         bottomNavigationView.setSelectedItemId(R.id.nav_dashboard);
 
-//        bottomNavigationView.setSelectedItemId(R.id.nav_search);
-//
-//        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//                switch (item.getItemId()) {
-//                    case R.id.nav_search:
-//                        startActivity(new Intent(getApplicationContext()
-//                            , SignInActivity.class));
-//                        overridePendingTransition(0, 0);
-//                        return true;
-//                }
-//
-//                return false;
-//            }
-//        });
-
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
