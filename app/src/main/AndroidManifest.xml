@@ -24,6 +24,9 @@
         android:theme="@style/Theme.PupStar"
         tools:targetApi="31">
         <activity
+            android:name=".VetShopDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddAppointmentActivity"
             android:exported="false" />
         <activity

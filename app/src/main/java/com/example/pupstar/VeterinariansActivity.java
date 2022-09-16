@@ -17,7 +17,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -61,11 +60,11 @@ public class VeterinariansActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
 
-                String selected = String.valueOf(arrayList.get(i).getMapUrl());
+                String selected = String.valueOf(arrayList.get(i).getId());
 
-                Intent defaultBrowser = Intent.makeMainSelectorActivity(Intent.ACTION_MAIN, Intent.CATEGORY_APP_BROWSER);
-                defaultBrowser.setData(Uri.parse(selected));
-                startActivity(defaultBrowser);
+                Intent intent = new Intent(VeterinariansActivity.this, VetShopDetailsActivity.class);
+                intent.putExtra("id", selected);
+                startActivity(intent);
 
             }
         });
